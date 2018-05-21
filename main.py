@@ -17,6 +17,12 @@ async def on_ready():
 async def on_message(message):
     if message.content.startswith('!bot'):
        await client.send_message(message.channel, 'Me chamou!?')
+    if message.content.startswith('!iamdublador'):
+        #ESTÁ ERRADO!!
+        await client.add_roles(member=message.author, *"Dublador")
+    if message.content.startswith('!iamdubladora'):
+        #ESTÁ ERRADO!!
+        await client.add_roles(member=message.author, *"Dubladora")
 
 
 client.run('NDQ4MjA0OTY0NzU4ODE0NzIw.DeSvkw.QayCBGlI0M5rBKR9iLk6hAXKEJE')
