@@ -8,10 +8,15 @@ Comando somente para teste, o bot te diz algo e te cita.
 Comando que seta seu cargo para dublador
 * !iamdubladora
 Comando que seta seu cargo para dubladora
+* !iamajudante
+Envia um pedido aos donos do servidor para a análise do seu perfil
+* !iamguardiao
+Mesma coisa que !iamajudante.
 * !diga
 Comando que faz o bot dizer algo para você, deverá ser usado no formato:
 `!Diga Olá, meu amigo!`
 `Olá meu amigo` seria a resposta do bot para esse comando em específico.
+
 
 Qualquer dúvida ou problemas, você pode registrar sua ocorrência aqui: https://github.com/DyeffersonAz/Robinho-bot/issues
 
