@@ -19,7 +19,7 @@ async def on_message(message):
     dubladora = discord.utils.get(message.server.roles, name="Dubladora")
 
     if message.content.startswith('!bot'):
-       await client.send_message(message.channel, 'Me chamou!?')
+       await client.send_message(message.channel, 'Me chamou, <@{}>!?'.format(message.author.id))
 
 
     if message.content == '!iamdublador':
@@ -29,6 +29,5 @@ async def on_message(message):
     if message.content == '!iamdubladora':
         await client.add_roles(message.author, dubladora)
         await client.send_message(message.channel, "<@{}> Setei seu cargo como \"Dubladora\"!".format(message.author.id))
-
 
 client.run('Token')
