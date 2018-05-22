@@ -25,4 +25,4 @@ async def on_message(message):
         await client.add_roles(member=message.author, *"Dubladora")
 
 
-client.run('NDQ4MjA0OTY0NzU4ODE0NzIw.DeSvkw.QayCBGlI0M5rBKR9iLk6hAXKEJE')
+client.run('BOT TOKEN')
