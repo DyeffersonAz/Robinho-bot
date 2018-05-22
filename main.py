@@ -15,19 +15,22 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    dublador = discord.utils.get(message.server.roles, name="Dublador")
-    dubladora = discord.utils.get(message.server.roles, name="Dubladora")
 
-    if message.content.startswith('!bot'):
+    if message.content.lower().startswith('!bot'):
        await client.send_message(message.channel, 'Me chamou, <@{}>!?'.format(message.author.id))
 
 
-    if message.content == '!iamdublador':
-        await client.add_roles(message.author, dublador)
+    if message.content.lower() == '!iamdublador':
+        await client.add_roles(message.author, discord.utils.get(message.server.roles, name="Dublador"))
         await client.send_message(message.channel, "<@{}> Setei seu cargo como \"Dublador\"!".format(message.author.id))
 
-    if message.content == '!iamdubladora':
-        await client.add_roles(message.author, dubladora)
+    if message.content.lower() == '!iamdubladora':
+        await client.add_roles(message.author, discord.utils.get(message.server.roles, name="Dubladora"))
         await client.send_message(message.channel, "<@{}> Setei seu cargo como \"Dubladora\"!".format(message.author.id))
 
-client.run('Token')
+    if message.content.lower().startswith('!diga'):
+        args = message.content.split(" ")
+        await client.send_message(message.channel, "{}".format(" ".join(args[1:])))
+
+
+client.run('NDQ4MjA0OTY0NzU4ODE0NzIw.DeXhSA.PHanRBCS8J4cIZrKsnck5sAMesU')
