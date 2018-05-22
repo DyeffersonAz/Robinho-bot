@@ -31,4 +31,4 @@ async def on_message(message):
         await client.send_message(message.channel, "<@{}> Setei seu cargo como \"Dubladora\"!".format(message.author.id))
 
 
-client.run('NDQ4MjA0OTY0NzU4ODE0NzIw.DeXThg.G7fNALteRKdH_HGAE9ZqyTcdcOA')
+client.run('Token')
