@@ -10,19 +10,25 @@ async def on_ready():
     # Basic definitions to the entrance of the robot to the network
     print("BOT ON **")
     print("Name= {}".format(client.user.name))
-    print("------------")s
+    print("------------")
 
 
 @client.event
 async def on_message(message):
+    dublador = discord.utils.get(message.server.roles, name="Dublador")
+    dubladora = discord.utils.get(message.server.roles, name="Dubladora")
+
     if message.content.startswith('!bot'):
        await client.send_message(message.channel, 'Me chamou!?')
-    if message.content.startswith('!iamdublador'):
-        #WRONG!!
-        await client.add_roles(member=message.author, *"Dublador")
-    if message.content.startswith('!iamdubladora'):
-        #WRONG!!
-        await client.add_roles(member=message.author, *"Dubladora")
 
 
-client.run('BOT TOKEN')
+    if message.content == '!iamdublador':
+        await client.add_roles(message.author, dublador)
+        await client.send_message(message.channel, "<@{}> Setei seu cargo como \"Dublador\"!".format(message.author.id))
+
+    if message.content == '!iamdubladora':
+        await client.add_roles(message.author, dubladora)
+        await client.send_message(message.channel, "<@{}> Setei seu cargo como \"Dubladora\"!".format(message.author.id))
+
+
+client.run('NDQ4MjA0OTY0NzU4ODE0NzIw.DeXThg.G7fNALteRKdH_HGAE9ZqyTcdcOA')
