@@ -1,16 +1,16 @@
 import discord
 import asyncio
 
-# Definindo o cliente aonde o bot comunicará com a API
+# Defining the client that the bot will log in
 client = discord.Client()
 
 
 @client.event
 async def on_ready():
-    # Definições básicas de entrada do bot à rede
+    # Basic definitions to the entrance of the robot to the network
     print("BOT ON **")
-    print("Nome= {}".format(client.user.name))
-    print("------------")
+    print("Name= {}".format(client.user.name))
+    print("------------")s
 
 
 @client.event
@@ -18,10 +18,10 @@ async def on_message(message):
     if message.content.startswith('!bot'):
        await client.send_message(message.channel, 'Me chamou!?')
     if message.content.startswith('!iamdublador'):
-        #ESTÁ ERRADO!!
+        #WRONG!!
         await client.add_roles(member=message.author, *"Dublador")
     if message.content.startswith('!iamdubladora'):
-        #ESTÁ ERRADO!!
+        #WRONG!!
         await client.add_roles(member=message.author, *"Dubladora")
 
 
