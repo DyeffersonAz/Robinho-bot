@@ -30,4 +30,9 @@ async def on_message(message):
         await client.add_roles(message.author, dubladora)
         await client.send_message(message.channel, "<@{}> Setei seu cargo como \"Dubladora\"!".format(message.author.id))
 
+    if message.content.startswith('!diga'):
+        args = message.content.split(" ")
+        await client.send_message(message.channel, "{}".format(" ".join(args[1:])))
+
+
 client.run('Token')
