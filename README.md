@@ -16,6 +16,8 @@ Mesma coisa que !iamajudante.
 Comando que faz o bot dizer algo para você, deverá ser usado no formato:
 `!Diga Olá, meu amigo!`
 `Olá meu amigo` seria a resposta do bot para esse comando em específico.
+* !daumgoogle ou !googleit
+Comando para pesquisar no google, utilize-o assim: `!daumgoogle Batata assada`
 
 
 Qualquer dúvida ou problemas, você pode registrar sua ocorrência aqui: https://github.com/DyeffersonAz/Robinho-bot/issues
