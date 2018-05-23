@@ -26,7 +26,7 @@ Comando que faz o bot dizer algo para você, deverá ser usado no formato:
 
 Comando para pesquisar no google, utilize-o assim: `!daumgoogle Batata assada`
 
-
+===================================================================================
 
 Qualquer dúvida ou problemas, você pode registrar sua ocorrência aqui: https://github.com/DyeffersonAz/Robinho-bot/issues
 
