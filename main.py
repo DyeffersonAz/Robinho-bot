@@ -1,5 +1,4 @@
 import discord
-
 # Defining the client that the bot will log in
 
 
@@ -42,5 +41,16 @@ async def on_message(message):
         args = message.content.split(" ")
         await client.send_message(message.channel, "{}".format(" ".join(args[1:])))
 
+    if message.content.lower().startswith("!googleit") or message.content.lower().startswith("!daumgoogle"):
+        args = message.content.split(" ")
+        search = "+".join(args[1:])
+        await client.send_message(message.channel, 'Aqui está sua pesquisa para "{}"'.format(' '.join(args[1:])))
+        await client.send_message(message.channel, google_it(search))
+
+def google_it(search):
+    default_url = "https://www.google.com.br/search?q="
+    search = str(search)
+    complete_url = default_url + search
+    return complete_url
 
 client.run('Token')
