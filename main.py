@@ -1,8 +1,8 @@
 import discord
+# THIS FILE (token.py) IS NOT AVAILABLE IN GITHUB. SEE LINE 68!
 import token
+
 # Defining the client that the bot will log in
-
-
 client = discord.Client()
 
 
