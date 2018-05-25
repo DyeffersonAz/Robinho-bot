@@ -47,10 +47,20 @@ async def on_message(message):
         await client.send_message(message.channel, 'Aqui está sua pesquisa para "{}"'.format(' '.join(args[1:])))
         await client.send_message(message.channel, google_it(search))
 
+    if message.content.lower().startswith("!arquivo"):
+        args = message.content.split(" ")
+        await client.send_message(message.channel, files("".join(args[1:])))
+
 def google_it(search):
     default_url = "https://www.google.com.br/search?q="
     search = str(search)
     complete_url = default_url + search
     return complete_url
+
+def files(arg):
+    if str(arg).lower() == "hb1":
+        return "http://download1574.mediafire.com/8q3mr66a40tg/iw2ihaaplursgpm/HIST%C3%93RIA+DETALHADA+DE+GHARTIN+ROBEVINE.odt"
+    else:
+        return "ERRO! ARQUIVO ESPECIFICADO NÃO ENCONTRADO"
 
 client.run('Token')
