@@ -1,6 +1,4 @@
 import discord
-# THIS FILE (token.py) IS NOT AVAILABLE IN GITHUB. SEE LINE 68!
-import token
 
 # Defining the client that the bot will log in
 client = discord.Client()
@@ -65,5 +63,3 @@ def files(arg):
     else:
         return "ERRO! ARQUIVO ESPECIFICADO NÃO ENCONTRADO"
 
-#This token file has only a variable called token. This file is not available in github because it is dangerous for the actual bot and the server that it works.
-client.run(token.TOKEN)
