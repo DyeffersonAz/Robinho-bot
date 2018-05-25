@@ -1,4 +1,5 @@
 import discord
+import token
 # Defining the client that the bot will log in
 
 
@@ -49,6 +50,7 @@ async def on_message(message):
 
     if message.content.lower().startswith("!arquivo"):
         args = message.content.split(" ")
+        await client.send_message(message.channel, "Aqui está seu arquivo:")
         await client.send_message(message.channel, files("".join(args[1:])))
 
 def google_it(search):
@@ -63,4 +65,5 @@ def files(arg):
     else:
         return "ERRO! ARQUIVO ESPECIFICADO NÃO ENCONTRADO"
 
-client.run('Token')
+#This token file has only a variable called token. This file is not available in github because it is dangerous for the actual bot and the server that it works.
+client.run(token.TOKEN)
