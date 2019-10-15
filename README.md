@@ -28,7 +28,7 @@ Comando para pesquisar no google, utilize-o assim: `!daumgoogle Batata assada`
 
 ---
 
-Qualquer dúvida ou problemas, você pode registrar sua ocorrência aqui: https://github.com/DyeffersonAz/Robinho-bot/issues
+Em caso de qualquer dúvida ou problema, você pode registrar sua ocorrência aqui: https://github.com/DyeffersonAz/Robinho-bot/issues
 
 Se você quiser souber programar e quiser me ajudar, crie uma branch desse código e crie um Pull Request aqui: https://github.com/DyeffersonAz/Robinho-bot/pulls
 
