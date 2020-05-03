@@ -2,27 +2,27 @@
 Bot usado no server de elenco Discord da série ainda não lançada "Propulsão"
 
 Segue abaixo a lista de comandos que o bot pode fazer (até agora):
-* !bot
+* `!bot`
 
 Comando somente para teste, o bot te diz algo e te cita.
-* !iamdublador
+* `!iamdublador`
 
 Comando que seta seu cargo para dublador
-* !iamdubladora
+* `!iamdubladora`
 
 Comando que seta seu cargo para dubladora
-* !iamajudante
+* `!iamajudante`
 
 Envia um pedido aos donos do servidor para a análise do seu perfil
-* !iamguardiao
+* `!iamguardiao`
 
 Mesma coisa que !iamajudante.
-* !diga
+* `!diga`
 
 Comando que faz o bot dizer algo para você, deverá ser usado no formato:
 `!Diga Olá, meu amigo!`
 `Olá meu amigo` seria a resposta do bot para esse comando em específico.
-* !daumgoogle ou !googleit
+* `!daumgoogle` ou `!googleit`
 
 Comando para pesquisar no google, utilize-o assim: `!daumgoogle Batata assada`
 
